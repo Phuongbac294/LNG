@@ -1,0 +1,40 @@
+:root {
+    --text-color: white;
+    --textH-color: red;
+    --background-color: green;
+    --background-image: linear-gradient(45deg, rgb(77, 211, 77), rgb(0, 221, 255));
+    --border-color: rgb(227, 211, 211);
+}
+
+
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 2rem;
+    box-sizing: border-box;
+    /* width: 1440px; */
+
+
+}
+body {
+    background-image: linear-gradient(120deg, rgb(235, 111, 185), rgb(203, 235, 120));
+    background-repeat: no-repeat;
+   
+}
+
+.grid {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
