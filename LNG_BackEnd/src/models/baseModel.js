@@ -13,7 +13,7 @@ class Base {
     }
 
     get(name) {
-        let query = this.model.find(name);
+        let query = this.model.findOne(name);
         return query.exec();
     }
 
@@ -26,8 +26,9 @@ class Base {
         let result = this.model.updateOne(id, data);
         return result;
     }
+
     delete(name) {
-        let result = this.model.delete(name);
+        let result = this.model.deleteOne(name);
         return result;
     }
 }

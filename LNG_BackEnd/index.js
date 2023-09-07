@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
 const user = require('./src/router/user');
+const controlProtection = require('./src/router/controlProtection');
+const car = require('./src/router/car')
+const {validateToken} = require('./src/middleware/validateToken');
 
 app.use(express.json());
 
 app.use('/user', user)
+app.use('/controlProtection', validateToken, controlProtection)
+app.use('/car', validateToken, car)
 
 app.get('/', (req, res) => {
     res.send('Welcome to the LNG!');

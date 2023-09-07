@@ -8,7 +8,6 @@ class UserModel extends Base {
          this.init('users', UserSchema)
     }
 
-
 }
 
 module.exports = new UserModel
