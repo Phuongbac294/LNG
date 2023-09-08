@@ -1,0 +1,36 @@
+:root {
+    --text-color: #333;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+* {
+    box-sizing: inherit; /* tất cả các thẻ sẽ kế thừa theo thẻo cha của nó */
+}
+
+html {
+    font-size: 62.5%; /*font chữ mặc định 10 px */
+    line-height: 1.6rem; /* chiều cao mặc đinh*/
+    font-family: 'Roboto', sans-serif; /* mặc định là font Roboto, nếu ko có thì dung sang sans-serif*/
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px; /* kích thước tối đa là 1200 với các màn hình lơn hơn*/
+    max-width: 100%; /* với kích thước nhỏ hon 1200 thì luôn lấy 100%; */
+    margin: 0 auto; /* căn giữa khối trong 1 khối khac theo chiều ngang */
+}
+
+.gird__row {
+    display: flex; /* sắp xếp các khối dàn hàng ngang */
+    flex-wrap: wrap; /* các phẩn tử vượt quá sẽ tự động xuống dòng */
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
