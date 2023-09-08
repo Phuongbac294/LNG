@@ -11,7 +11,9 @@ const validateToken = (req, res, next) => {
       try {
           const token = authorization.split(" ")[1];
           const decoded = jwt.verify(token, privateKey);
+          console.log(decoded);
           if (decoded) {
+            req.user = decoded;
             next();
           }
         } catch (err) {

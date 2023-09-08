@@ -9,7 +9,10 @@ class ControlProtection_controller {
     }
 
     createData = async (req, res) => {
-        let data = await req.body;
+        let data = await req.body;        
+        data.createdByName = req.user.username;
+        data.createdById = req.user.id
+        console.log(data);
         let result = await models.create(data);
         res.send(result);
     }
@@ -25,7 +28,7 @@ class ControlProtection_controller {
     }
 
     deleteData = async (req, res) => {
-        let data = await req.body;    
+        let data = await req.body;
         await models.delete(data)
         res.send('deleted successfully')
     }

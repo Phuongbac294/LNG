@@ -7,7 +7,7 @@ const CarSchema = new mongoose.Schema({
     name: String,
     company: String,
     date: Date,
-    // createdBy: ObjectID,
+    createdBy: String,
     // items: Array.of(ObjectID)
 })
 

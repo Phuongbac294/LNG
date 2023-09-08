@@ -5,6 +5,7 @@ const controlProtection = require('./src/router/controlProtection');
 const car = require('./src/router/car')
 const {validateToken} = require('./src/middleware/validateToken');
 
+
 app.use(express.json());
 
 app.use('/user', user)

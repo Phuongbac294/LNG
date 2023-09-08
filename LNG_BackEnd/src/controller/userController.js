@@ -21,7 +21,12 @@ class UserController {
             if (user && user !== null) {
                 let checkPassword = await bcrypt.compareSync(password, user.password);
                 if (checkPassword) {
-                    let token = jwt.sign({username: user.username, email: user.email}, privateKey);
+                    let token = jwt.sign({  username: user.username, 
+                                            email: user.email, 
+                                            title: user.title,
+                                            id: user._id,
+                                        }, 
+                                        privateKey);
                     res.send({existed: true, token: token, user: user, message: "Found"})
                 } else {
                     res.send({ existed: false, token: "", message: "Password is wrong" });
