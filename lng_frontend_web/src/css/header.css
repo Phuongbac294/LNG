@@ -1,7 +1,43 @@
 .header {
-    height: 50px;
-    background-color: #FF3366;
-    min-width: 80vw;
+    height: 70px;
+    background-color: var(--header-color);
     display: flex;
-    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.header__img {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+.header__company {   
+    width: 100%;
+}
+
+.header__text_h2 {
+    font-size: 2rem;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px rgba(94, 8, 233, 0);
+    color: red;
+    margin: 10px;
+}
+
+.header__text_p {
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 500;
 }

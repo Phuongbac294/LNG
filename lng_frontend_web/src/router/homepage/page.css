@@ -1,0 +1,70 @@
+.page {
+    /* height: 500px; */
+    font-size: 1.8rem;
+    margin: 10px 0 ;
+    text-align: start;
+}
+
+.page_11 {
+    /* height: 300px; */
+}
+
+.page_h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    height: 60px;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: rgb(240, 232, 222);
+    cursor: pointer;
+}
+.page_50 {
+    max-width: 450px;
+    width: 450px;
+    background-color: #e1f0f1;
+    max-height: 230;
+    padding-left: 10px;
+}
+
+.page_img {
+    max-width: 440px;
+    /* max-height: 230px; */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.page_12 {
+    margin-top: 10px;
+}
+
+.page_12_col {
+    width: 30%;
+    cursor: pointer;    
+}
+
+.page_12_img {
+    max-width: 270px;
+    height: 200px;
+}
+.page_anh {
+    max-width: 270px;
+    width: 270px;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+.page_12_h {
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.CP {
+    
+}
+
+.table_cp td{
+    text-align: center;
+    width: 95px;
+    padding: 0;
+}

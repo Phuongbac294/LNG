@@ -1,0 +1,33 @@
+.menu_navi {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 30px;
+    align-items: center;
+}
+
+.menu_navi_list {
+    display: flex;
+    padding-left: 0;
+    
+}
+
+.menu_navi_list-item {
+    min-width: 100px;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu_navi_list-item:hover {
+    background-color: rgb(33, 177, 221);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

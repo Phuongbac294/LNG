@@ -1,0 +1,28 @@
+.footer {
+    background-color: rgb(54, 52, 52);
+    color: var(--white-color);
+    text-align: start;
+    font-size: 1.4rem;
+    padding: 5px 20px 10px;
+    display: block;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.footer_text_h {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: blue;
+    line-height: 35px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;;
+}
+
+.footer_list {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
