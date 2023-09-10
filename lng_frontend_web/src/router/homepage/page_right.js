@@ -2,6 +2,29 @@ import React from "react";
 import '../../css/base.css';
 import './page.css';
 
+const cpary =[
+                {month: '09-2023', c3:630, c4:640},                
+                {month: '08-2023', c3: 790, c4:790},
+                {month: '07-2023', c3:590, c4:600},
+                {month: '06-2023', c3:630, c4:640},
+                {month: '05-2023', c3:630, c4:640},
+                {month: '04-2023', c3:630, c4:640},
+                {month: '03-2023', c3:630, c4:640},
+                {month: '02-2023', c3:630, c4:640},
+                {month: '01-2023', c3:630, c4:640},
+                
+            ]
+
+const Cplist = (porps) => {
+    return (
+        <tr>
+            <td>{porps.month}</td>
+            <td>{porps.c3}</td>
+            <td>{porps.c4}</td>
+        </tr>
+    )
+}
+
 const CP = (porps) => {
     return (
         <div className="cp">
@@ -12,31 +35,7 @@ const CP = (porps) => {
                     <td>PROPANE (C3)</td>
                     <td>BUTAN (C4)</td>
                 </th>
-                <tr>
-                    <td>9-023</td>
-                    <td>790</td>
-                    <td>790</td>
-                </tr>
-                <tr>
-                    <td>8-2023</td>
-                    <td>790</td>
-                    <td>790</td>
-                </tr>
-                <tr>
-                    <td>7-2023</td>
-                    <td>790</td>
-                    <td>790</td>
-                </tr>
-                <tr>
-                    <td>6-2023</td>
-                    <td>790</td>
-                    <td>790</td>
-                </tr>
-                <tr>
-                    <td>5-2023</td>
-                    <td>790</td>
-                    <td>790</td>
-                </tr>
+                {cpary.map(item => Cplist(item))}
             </table>
         </div>
     )
