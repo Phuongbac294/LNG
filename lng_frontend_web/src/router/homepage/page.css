@@ -59,12 +59,23 @@
     padding-top: 5px;
     padding-bottom: 10px;
 }
-.CP {
-    
+.cp {
+    width: 100%;
+    background-color: rgb(204, 235, 224);
 }
 
-.table_cp td{
+.table_cp {
     text-align: center;
-    width: 95px;
-    padding: 0;
+    width: 100%;
+    /* border: 1px solid #757272; */
+
+}
+
+.table_cp_33 {
+    /* max-width: 33%; */
+    width: 100px;
+}
+
+.table_cp_25 {
+    width: 75px;
 }

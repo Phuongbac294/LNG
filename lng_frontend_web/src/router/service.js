@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Content(props) {
+function Service(props) {
     return (
         <div>
-            Content
+            Service
         </div>
     )
 }
 
-export default Content;
+export default Service;

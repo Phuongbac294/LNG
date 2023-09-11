@@ -1,6 +1,5 @@
 .home {
     display: flex;
-    position: relative;
-    top: 100px;
+    /* margin-top: 100px; */
     font-size: 1.6rem;
 }

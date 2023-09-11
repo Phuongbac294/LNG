@@ -5,10 +5,12 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './router/header';
 import NaviMenu from './router/naviMenu'
 import Home from './router/home';
-import Content from './router/content';
+import Product from './router/product';
 import Footer from './router/footer';
 import Login from './router/login';
-import Register from './router/register';
+// import Register from './router/register';
+import Service from './router/service';
+import Contact from './router/contact';
 
 
 function App() {
@@ -18,13 +20,16 @@ function App() {
         <Header/>
         <NaviMenu/>
       </div>
+      <div className='maincontent'>
         <Routes >
           <Route path="/" element={<Home />} />
-          <Route path="/Content" element={<Content />} />
-
-          <Route path="/Register" element={<Register />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
+
 			  </Routes>
+      </div>
 			  <Footer/>
     </div>
   );
