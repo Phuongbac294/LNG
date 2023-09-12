@@ -49,4 +49,51 @@
     line-height: 2.4rem;
     font-size: 1.8rem;
     border: none;
+    
+}
+.btn_eye {
+    border: none;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: brown;
+    background: none;
+}
+.login_tk {
+    height: 25px;
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+.login_tk p {
+    margin: 0;
+    font-style: italic;
+    color: blue;
+    cursor: pointer;
+}
+.login_tk p:hover {
+    color: red;
+}
+
+.login_bang p {
+    margin: 10px auto;
+    color: blueviolet;
+    font-weight: 500;
+    width: 330px;
+}
+.login_bang li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.login_bang li:hover{
+    background-color: rgb(169, 203, 226);
+}
+.login_bang ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 15px 0;
 }

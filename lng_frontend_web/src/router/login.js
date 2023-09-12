@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 // import {useNavigate} from 'react-router-dom';
 import logo from '../img/logo-AP-removebg-preview.png';
 import '../css/base.css';
@@ -7,18 +8,26 @@ import '../css/login.css';
 
 import { FaUser, FaLock, FaEyeSlash, FaEye, FaFacebookF, FaGoogle, FaGithub, } from "react-icons/fa";
 
-// const inputValue = (value, e) => {
-
+// const inputValue = (value) => {
+// 	const [value, setValue] = useState()
 // 	return (
 // 		<div>
-// 			<input type="text" value={value} onChange={e => setValue(e)} />
+// 			<input className='input_item' type={props.type} value={this.value} onChange={e => setValue(this.e.target.value)} />
 // 		</div>
 // 	)
 // }
 
 function Login(props){
-	const [eye, setEye] = React.useState(true)
-	// const navigate = useNavigate();
+	const [eye, setEye] = useState(true)
+	const [user, setUser] = useState()
+	const [password, setPassword] = useState();
+
+	const handlerLogin = (props) => {
+		props= {username: user, password: password}
+		console.log(props);
+		setUser('');
+		setPassword('')
+	}
 
 	return (
 		<div className='modal'>
@@ -33,7 +42,8 @@ function Login(props){
 							<FaUser/>
 						</div>
 						<div className='row input_login_input'>
-							<input type='text' className='input_item' placeholder='Username'/>
+							<input type='text' className='input_item' placeholder='Username' value={user} onChange={e => setUser(e.target.value)}/>
+							{/* <inputValue type='text' value={user} placeholder='Username'/> */}
 						</div>
 					</div>
 					<div className='input_login'>
@@ -41,23 +51,25 @@ function Login(props){
 							<FaLock/>
 						</div>
 						<div className='row input_login_input'>
-							<input type='text' className='input_item' placeholder='Password'/>
-							{eye ? <FaEyeSlash onChange={e=>setEye(!eye)}/> : <FaEye onChange={e=>setEye(!eye)}/>}						
-							
+							<input type={eye ? 'password' :'text'} className='input_item' placeholder='Password' value={password} onChange={e => setPassword(e.target.value)}/>
+							<button className='btn_eye' onClick={() =>{setEye(!eye)}}>
+								{eye ? <FaEyeSlash /> : <FaEye />}
+							</button>
 						</div>
 					</div>
-					<button className='btn btn-login'>Đăng Nhập</button>
+					<button className='btn ' onClick={handlerLogin}>Đăng Nhập</button>
+					
 				</div>
-				<div className='row'>
+				<div className='row login_tk'>
 					<p>Quên mật khẩu?</p>
-					<p>Tạo tài khoản</p>
+					<p>Tạo tài khoản?</p>
 				</div>
-				<div>
+				<div className='login_bang'>
 					<p>Đăng nhập bằng</p>
 					<ul className='row'>
-						<li><FaFacebookF/> Facebook</li>
-						<li><FaGoogle/> Google</li>
-						<li><FaGithub/> Github</li>
+						<li ><FaFacebookF style={{color:'blue', paddingRight:5}}/> Facebook</li>
+						<li><FaGoogle style={{color:"red",paddingRight:5}}/>  Google</li>
+						<li><FaGithub style={{color:"green",paddingRight:5}}/>  Github</li>
 					</ul>
 				</div>
 			</div>
