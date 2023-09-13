@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-// import {useNavigate} from 'react-router-dom';
+import {NavLink,} from 'react-router-dom';
 import logo from '../img/logo-AP-removebg-preview.png';
 import '../css/base.css';
 import '../css/header.css';
@@ -8,20 +8,17 @@ import '../css/login.css';
 
 import { FaUser, FaLock, FaEyeSlash, FaEye, FaFacebookF, FaGoogle, FaGithub, } from "react-icons/fa";
 
-// const inputValue = (value) => {
-// 	const [value, setValue] = useState()
-// 	return (
-// 		<div>
-// 			<input className='input_item' type={props.type} value={this.value} onChange={e => setValue(this.e.target.value)} />
-// 		</div>
-// 	)
-// }
+const inputValue = (value, setValue, type, text) => {	
+	return (
+		<input className='input_item' value={value} type={type} placeholder={text} onChange={e => setValue(e.target.value)}/>
+	)
+}
 
 function Login(props){
 	const [eye, setEye] = useState(true)
 	const [user, setUser] = useState()
 	const [password, setPassword] = useState();
-
+	const type = eye ? 'password' : 'text';
 	const handlerLogin = (props) => {
 		props= {username: user, password: password}
 		console.log(props);
@@ -42,8 +39,7 @@ function Login(props){
 							<FaUser/>
 						</div>
 						<div className='row input_login_input'>
-							<input type='text' className='input_item' placeholder='Username' value={user} onChange={e => setUser(e.target.value)}/>
-							{/* <inputValue type='text' value={user} placeholder='Username'/> */}
+							{inputValue(user, setUser, 'text', 'username')}
 						</div>
 					</div>
 					<div className='input_login'>
@@ -51,7 +47,7 @@ function Login(props){
 							<FaLock/>
 						</div>
 						<div className='row input_login_input'>
-							<input type={eye ? 'password' :'text'} className='input_item' placeholder='Password' value={password} onChange={e => setPassword(e.target.value)}/>
+							{inputValue(password, setPassword, type, 'password')}							
 							<button className='btn_eye' onClick={() =>{setEye(!eye)}}>
 								{eye ? <FaEyeSlash /> : <FaEye />}
 							</button>
@@ -62,7 +58,7 @@ function Login(props){
 				</div>
 				<div className='row login_tk'>
 					<p>Quên mật khẩu?</p>
-					<p>Tạo tài khoản?</p>
+					<NavLink to="/Register"><p>Tạo tài khoản?</p></NavLink>
 				</div>
 				<div className='login_bang'>
 					<p>Đăng nhập bằng</p>
