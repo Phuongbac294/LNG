@@ -1,0 +1,20 @@
+.tieude {
+    width: 1200px;
+    height: 30px;
+    font-size: 1.6rem;
+    line-height: 30px;
+    background-color: #00FFFF;
+    --width-td: 10px;
+}
+.tieude_5 {
+    width: calc(var(--width-td) * 5);
+}
+.tieude_10 {
+    width: calc(var(--width-td) * 10);
+}
+.tieude_20 {
+    width: calc(var(--width-td) * 20);;
+}
+.tieude_x {
+    width: calc(1200px - calc(var(--width-td) * 70));
+}

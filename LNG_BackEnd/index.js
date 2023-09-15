@@ -9,8 +9,8 @@ const {validateToken} = require('./src/middleware/validateToken');
 app.use(express.json());
 
 app.use('/user', user)
-app.use('/controlProtection', validateToken, controlProtection)
-app.use('/car', validateToken, car)
+app.use('/controlProtection', controlProtection)
+app.use('/car',  car)
 
 app.get('/', (req, res) => {
     res.send('Welcome to the LNG!');

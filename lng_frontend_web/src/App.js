@@ -33,12 +33,13 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/TongHop" component={<TongHop/>} />
-          <Route path="/QuanLy" component={<QuanLy/>} />
-          <Route path="/BaoVe" component={<BaoVe/>} />
-          <Route path="/KhoBon" component={<KhoBon/>} />
-          <Route path="/KhoSanXuat" component={<KhoSanXuat/>} />
-          <Route path="/Xe" component={<Xe/>} />
+          <Route path="/TongHop" element={<TongHop />} />
+          <Route path="/QuanLy" element={<QuanLy />} />
+          <Route path="/BaoVe" element={<BaoVe />} />
+          <Route path="/KhoBon" element={<KhoBon />} />
+          <Route path="/KhoSanXuat" element={<KhoSanXuat />} />
+          <Route path="/Xe" element={<Xe />} />
+
 			  </Routes>
       </div>
 			  <Footer/>
