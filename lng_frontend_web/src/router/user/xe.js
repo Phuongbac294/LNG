@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/table.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Tieude = (props) => {
     return (
@@ -34,12 +34,12 @@ const Tieude = (props) => {
 // 
 // var ApiCar = 'http://localhost:3005/car'
 
-const Cardata = await axios.get("http://localhost:3000/car")
-    .then(function (res) {return res.data})
-    .catch(function (error) {console.log(error)})
-    .finally(function () {})
+// const Cardata = await axios.get("http://localhost:3000/car")
+//     .then(function (res) {return res.data})
+//     .catch(function (error) {console.log(error)})
+//     .finally(function () {})
   
-console.log(Cardata);
+// console.log(Cardata);
 
 // function start() {
 //     getCar(renderCar)

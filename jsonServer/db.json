@@ -7,85 +7,108 @@
     },
     {
       "id": 2
+    }    
+  ],
+  "users" : [
+    {"id": 1, 
+    "name": "Phuong", 
+    "password": "nsp123456",
+    "firstName": "Phuong", 
+    "lastName": "Nguyễn Sỹ", 
+    "email": "nsphuong@gmail.com", 
+    "phone": "0977809587", 
+    "brithday": "1983-04-29",
+    "address": {"city": "Bắc Ninh",
+            "district": "Tiên Du",
+            "ward": "Nội Duệ",
+            "village": "Đình Cả"
+            },
+      "job": "kỹ thuật",
+    "power": "4"},
+    {"id": 2, 
+    "name": "Thuc", 
+    "password": "nst123456",
+    "firstName": "Thức", 
+    "lastName": "Nguyễn Sỹ", 
+    "email": "nsthuc@gmail.com", 
+    "phone": "0914999029", 
+    "brithday": "1975-08-02",
+    "address": {"city": "Bắc Ninh",
+            "district": "Tiên Du",
+            "ward": "Nội Duệ",
+            "village": "Đình Cả"
+            },
+      "job": "kỹ thuật",
+    "power": "3"},
+    {"id": 3, 
+    "name": "khiem", 
+    "password": "tvk123456",
+    "firstName": "Khiêm", 
+    "lastName": "Trần Văn", 
+    "email": "tvkhiem@gmail.com", 
+    "phone": "0914999030", 
+    "brithday": "1990-09-02",
+    "address": {"city": "Bắc Ninh",
+            "district": "Tiên Du",
+            "ward": "Nội Duệ",
+            "village": "Đình Cả"
+            },
+      "job": "Giám đốc",
+    "power": "5"},
+    {"id": 4, 
+    "name": "ha",
+    "password": "nth123456", 
+    "firstName": "Hà", 
+    "lastName": "Nguyễn Thị", 
+    "email": "ntha@gmail.com", 
+    "phone": "0914999026", 
+    "brithday": "1984-06-28",
+    "address": {"city": "Bắc Ninh",
+            "district": "Tiên Du",
+            "ward": "Nội Duệ",
+            "village": "Đình Cả"
+            },
+      "job": "Kế toán",
+    "power": "4"}
+  ],
+  "tanks": [
+    {
+      "id": "tank001",
+      "tank1": {"level": 1290, "temp": 25, "pro": 6.5, "mw": 34580, "date": {"year": 2023, "month": 9, "day": 10, "hour": "17-00"},"id": "tank1_1"},
+      "tank2": {"level": 1290, "temp": 25, "pro": 6.5, "mw": 34580, "date": {"year": 2023, "month": 9, "day": 10, "hour": "17-00"},"id": "tank2-1"},
+      "date": {"year": 2023, "month": 9, "day": 10, "hour": "17-00"}
     },
     {
-      "name": "hoc",
-      "age": 23,
-      "id": 3
-    },
+      "id": "tank002",
+      "tank1": {"level": 1290, "temp": 25, "pro": 6.5, "mw": 34580, "date": {"year": 2023, "month": 9, "day": 10, "hour": "17-00"},"id": "tank1_2"},
+      "tank2": {"level": 1290, "temp": 25, "pro": 6.5, "mw": 34580, "date": {"year": 2023, "month": 9, "day": 10, "hour": "17-00"},"id": "tank2-2"},
+      "date": {"year": 2023, "month": 9, "day": 11, "hour": "17-00"}
+    }
+  ],
+  "cars": [
     {
-      "name": "lập",
-      "age": 40,
-      "id": 4
-    },
+      "id": "car1",
+      "plates": "29C-20943",
+      "name": "hulux",
+      "manufacturer": "toyota"
+    }
+  ],
+  "protect": [
     {
-      "name": "trình",
-      "age": 41,
-      "id": 5
-    },
+      "id" : "protect_1",
+      "plates": "29C-20943",
+      "drive": "Phuong",
+      "date": "2023-09-10 17-00",
+      "goods": {"status": "xuat", "bottle_12_ap": 0, "bottle_45_ap": 20},
+      "byname": {"byId": "1", "name": "Phuong"}
+    }
+  ],
+  "manufacturer":[
     {
-      "name": "di",
-      "age": 35,
-      "id": 6
-    },
-    {
-      "user": {
-        "name": "phương",
-        "age": "45"
-      },
-      "id": 7
-    },
-    {
-      "user": {
-        "name": "háoc",
-        "age": "23"
-      },
-      "id": 8
-    },
-    {
-      "user": {
-        "name": "hoctap",
-        "age": "23"
-      },
-      "id": 9
-    },
-    {
-      "user": {
-        "name": "học tập",
-        "age": "12"
-      },
-      "id": 10
-    },
-    {
-      "user": {
-        "name": "dung",
-        "age": "52"
-      },
-      "id": 11
-    },
-    {
-      "user": {
-        "name": "hoc",
-        "age": "45"
-      },
-      "id": 12
-    },
-    {
-      "user": {
-        "name": "hoc",
-        "age": "45"
-      },
-      "id": 13
-    },
-    {
-      "name": "hoc",
-      "age": "45",
-      "id": 14
-    },
-    {
-      "name": "di",
-      "age": 35,
-      "id": 15
+      "id": "manufacturer_1",
+      "date": "2023-09-10 17-00",
+      "total": {"bottle_12_ap": 200, "bottle_45_ap": 200, "mw": 1200},
+      "byName": {"byId": "1", "name": "Phuong"}
     }
   ]
 }

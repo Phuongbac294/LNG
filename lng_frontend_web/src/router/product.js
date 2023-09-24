@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import '../css/table.css';
 // import { json } from 'react-router-dom';
 
@@ -17,9 +17,9 @@ const Tieude = (props) => {
 
 
 
-var Api = "http://localhost:3000/courser"
-var getApi = await axios.get(Api)
-const Data = getApi.data
+// var Api = "http://localhost:3000/courser"
+// var getApi = await axios.get(Api)
+// const Data = getApi.data
 
 
 
@@ -29,7 +29,7 @@ function Product(props) {
     console.log(`name: ${name}, age: ${age}`);
     const hanlder = () => {
         const user = { name: name, age: age}
-        axios.post(Api, user)
+        // axios.post(Api, user)
         setName("");
         setAge("")
     }
