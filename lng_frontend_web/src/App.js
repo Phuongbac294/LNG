@@ -1,49 +1,27 @@
-// import logo from './logo.svg';
-import './css/base.css';
-// import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Header from './router/header';
-import NaviMenu from './router/naviMenu'
-import Home from './router/home';
-// import Product from './router/product';
-import Footer from './router/footer';
-// import Login from './router/login';
-// import Register from './router/register';
-// import Service from './router/service';
-// import Contact from './router/contact';
-// import TongHop from './router/user/tonghop';
-// import QuanLy from './router/user/quanly';
-// import BaoVe from './router/user/baove';
-// import KhoBon from './router/user/khobon';
-// import KhoSanXuat from './router/user/khosanxuat';
-// import Xe from './router/user/xe';
+
+import {Routes, Route, Router  } from 'react-router-dom';
+import { publicRoutes } from './router';
+// import Headers from './Pages/Header';
+// import Footer from './Pages/Footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <div className="header_title">
-        <Header/>
-        <NaviMenu/>
-      </div>
-      <div className='maincontent'>
-        <Routes >
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/Product" element={<Product />} />
-          <Route path="/Service" element={<Service />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} /> */}
-          {/* <Route path="/Register" element={<Register />} /> */}
-          {/* <Route path="/TongHop" element={<TongHop />} />
-          <Route path="/QuanLy" element={<QuanLy />} />
-          <Route path="/BaoVe" element={<BaoVe />} />
-          <Route path="/KhoBon" element={<KhoBon />} />
-          <Route path="/KhoSanXuat" element={<KhoSanXuat />} />
-          <Route path="/Xe" element={<Xe />} /> */}
+    <Router>
+      {/* <div className="App"> */}
+        {/* <Headers/>
 
-			  </Routes>
-      </div>
-			  <Footer/>
-    </div>
+        <div className='maincontent'> */}
+          <Routes>
+            {publicRoutes.map((route, index) => {
+              const Page = route.component
+              return <Route key={index} path={route.path} element={<Page />} />
+            })}
+          </Routes>
+        {/* </div>
+  
+  			  <Footer/> */}
+      {/* </div> */}
+    </Router>
   );
 }
 

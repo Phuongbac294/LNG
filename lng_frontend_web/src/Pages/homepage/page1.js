@@ -1,6 +1,5 @@
 import React from "react";
-import '../../css/base.css';
-import '../../css/home.css';
+import '../Home/home.css'
 import './page.css';
 import anh0 from "./img/gia-gas-hom-nay-9-9-20230909092224307.png"
 import anh1 from "./img/dau_89.jpeg";

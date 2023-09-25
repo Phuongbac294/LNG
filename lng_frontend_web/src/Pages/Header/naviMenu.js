@@ -1,7 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import '../css/base.css';
-import '../css/naviMenu.css';
+import './naviMenu.css';
 
 
 

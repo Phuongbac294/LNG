@@ -1,8 +1,7 @@
 import React from 'react';
-import '../css/base.css';
-import '../css/home.css';
-import Page1 from './homepage/page1';
-import PageRigth from './homepage/page_right';
+import './home.css';
+import Page1 from '../homepage/page1';
+import PageRigth from '../homepage/page_right';
 
 function Home(props) {
     return (

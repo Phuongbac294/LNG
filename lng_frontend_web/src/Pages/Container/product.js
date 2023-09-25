@@ -1,6 +1,6 @@
 import React from 'react';
 // import axios from 'axios';
-import '../css/table.css';
+import './table.css';
 // import { json } from 'react-router-dom';
 
 const Tieude = (props) => {
@@ -28,7 +28,7 @@ function Product(props) {
     const [age, setAge] = React.useState()
     console.log(`name: ${name}, age: ${age}`);
     const hanlder = () => {
-        const user = { name: name, age: age}
+        // const user = { name: name, age: age}
         // axios.post(Api, user)
         setName("");
         setAge("")
@@ -38,16 +38,16 @@ function Product(props) {
     //     axios.delete(Api, id)
     // }
 
-    const DanhSach = (prop) => {
-        return (
-            <tr className='tieude grid' style={{backgroundColor: '#fff'}}>
-                <td className='tieude_5'>{prop.id}</td>
-                <td className='tieude_10'>{prop.name}</td>
-                <td className='tieude_10'>{prop.age}</td>
-                <td className='tieude_5' >Delete</td>
-            </tr>
-        )
-    }
+    // const DanhSach = (prop) => {
+    //     return (
+    //         <tr className='tieude grid' style={{backgroundColor: '#fff'}}>
+    //             <td className='tieude_5'>{prop.id}</td>
+    //             <td className='tieude_10'>{prop.name}</td>
+    //             <td className='tieude_10'>{prop.age}</td>
+    //             <td className='tieude_5' >Delete</td>
+    //         </tr>
+    //     )
+    // }
 
     return (
         <div className='grid'>
@@ -56,7 +56,7 @@ function Product(props) {
                 <Tieude/>
             </table>           
             <table>
-                {Data.map(item => DanhSach(item))}
+                {/* {Data.map(item => DanhSach(item))} */}
             </table>
             <input type='text' value={name} onChange={e => setName(e.target.value)} />
             <input type='number' value={age} onChange={e => setAge(e.target.value)} />

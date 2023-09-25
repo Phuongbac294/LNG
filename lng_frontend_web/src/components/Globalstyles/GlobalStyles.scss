@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 :root {
     --text-color: #333;
     --black-color: #000;
@@ -7,15 +9,27 @@
 }
 
 * {
-    box-sizing: inherit; /* tất cả các thẻ sẽ kế thừa theo thẻo cha của nó */
+    box-sizing: inherit; /* tất cả các thẻ sẽ kế thừa theo thẻ cha của nó */
 }
 
 html {
     font-size: 62.5%; /*font chữ mặc định 10 px */
-    line-height: 1.6rem; /* chiều cao mặc đinh*/
+    line-height: 1.5; /* chiều cao mặc đinh*/
     font-family: 'Roboto', sans-serif; /* mặc định là font Roboto, nếu ko có thì dung sang sans-serif*/
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
 
 .grid {
     width: 1200px; /* kích thước tối đa là 1200 với các màn hình lơn hơn*/
@@ -51,6 +65,7 @@ html {
     justify-content: space-between;
     width: 100%;
 }
+
 .App {
     text-align: center;
     min-height: 100vh;
@@ -101,3 +116,4 @@ html {
     align-items: center;
     justify-content: center;
 }
+

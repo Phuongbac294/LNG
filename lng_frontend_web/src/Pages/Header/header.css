@@ -29,6 +29,7 @@
 
 .header__text_h2 {
     font-size: 2rem;
+    line-height: 1;
     font-style: italic;
     text-transform: uppercase;
     text-shadow: 5px 5px 5px rgba(94, 8, 233, 0);
@@ -37,7 +38,8 @@
 }
 
 .header__text_p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    line-height: 1;
     color: blue;
     font-weight: 500;
 }

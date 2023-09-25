@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/table.css';
+import './table.css';
 
 const Tieude = (props) => {
     return (

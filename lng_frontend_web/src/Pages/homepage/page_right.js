@@ -1,5 +1,4 @@
 import React from "react";
-import '../../css/base.css';
 import './page.css';
 import PageCP from './page_rigth_cp';
 import PageExchangeRate from "./page_rigth_exchangeRate";

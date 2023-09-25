@@ -1,7 +1,6 @@
 import React from 'react';
-import '../css/base.css';
-import '../css/header.css';
-import logoAnphu from '../img/logo-AP-removebg-preview.png'
+import './header.css';
+import logoAnphu from '../../img/logo-AP-removebg-preview.png'
 
 
 

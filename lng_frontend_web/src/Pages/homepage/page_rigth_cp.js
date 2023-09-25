@@ -1,5 +1,4 @@
 import React from "react";
-import '../../css/base.css';
 import './page.css';
 
 const cpary =[
